@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>JupyterLab</title><meta name="viewport" content="width=device-width,initial-scale=1">   <script id="jupyter-config-data" type="application/json">{"allow_hidden_files": false, "appName": "JupyterLab", "appNamespace": "lab", "appSettingsDir": "/opt/anaconda3/share/jupyter/lab/settings", "appUrl": "/lab", "appVersion": "3.4.4", "baseUrl": "/", "buildAvailable": true, "buildCheck": true, "cacheFiles": false, "collaborative": false, "devMode": false, "disabledExtensions": [], "exposeAppInBrowser": false, "extraLabextensionsPath": [], "federated_extensions": [{"extension": "./extension", "load": "static/remoteEntry.66500334d7b36213676e.js", "mimeExtension": "./mimeExtension", "name": "jupyterlab-plotly"}, {"extension": "./extension", "load": "static/remoteEntry.c267118552c4161d6406.js", "name": "@pyviz/jupyterlab_pyviz", "style": "./style"}, {"extension": "./extension", "load": "static/remoteEntry.ca1efc27dc965162ca86.js", "name": "@jupyter-widgets/jupyterlab-manager"}, {"extension": "./extension", "load": "static/remoteEntry.aa1060b2d1221f8e5688.js", "name": "jupyterlab_pygments", "style": "./style"}, {"extension": "./extension", "load": "static/remoteEntry.65014cb58c79e1651a0a.js", "name": "@voila-dashboards/jupyterlab-preview", "style": "./style"}], "fullAppUrl": "/lab", "fullLabextensionsUrl": "/lab/extensions", "fullLicensesUrl": "/lab/api/licenses", "fullListingsUrl": "/lab/api/listings", "fullMathjaxUrl": "/static/notebook/components/MathJax/MathJax.js", "fullSettingsUrl": "/lab/api/settings", "fullStaticUrl": "/static/lab", "fullThemesUrl": "/lab/api/themes", "fullTranslationsApiUrl": "/lab/api/translations", "fullTreeUrl": "/lab/tree", "fullWorkspacesApiUrl": "/lab/api/workspaces", "ignorePlugins": [], "labextensionsPath": ["/Users/renoodle/Library/Jupyter/labextensions", "/Users/renoodle/.local/share/jupyter/labextensions", "/opt/anaconda3/share/jupyter/labextensions", "/usr/local/share/jupyter/labextensions", "/usr/share/jupyter/labextensions"], "labextensionsUrl": "/lab/extensions", "licensesUrl": "/lab/api/licenses", "listingsUrl": "/lab/api/listings", "mathjaxConfig": "TeX-AMS-MML_HTMLorMML-full,Safe", "mode": "multiple-document", "notebookVersion": "[1, 18, 1, \"\", \"\"]", "preferredPath": "/", "quitButton": true, "schemasDir": "/opt/anaconda3/share/jupyter/lab/schemas", "serverRoot": "/Users/renoodle", "settingsUrl": "/lab/api/settings", "staticDir": "/opt/anaconda3/share/jupyter/lab/static", "store_id": 0, "templatesDir": "/opt/anaconda3/share/jupyter/lab/static", "terminalsAvailable": true, "themesDir": "/opt/anaconda3/share/jupyter/lab/themes", "themesUrl": "/lab/api/themes", "token": "d098f26d44e5aa7419ffaec1bf62ece232f61564b9c95383", "translationsApiUrl": "/lab/api/translations", "treePath": "", "treeUrl": "/lab/tree", "userSettingsDir": "/Users/renoodle/.jupyter/lab/user-settings", "workspace": "default", "workspacesApiUrl": "/lab/api/workspaces", "workspacesDir": "/Users/renoodle/.jupyter/lab/workspaces", "wsUrl": ""}</script><link rel="icon" type="image/x-icon" href="/static/favicons/favicon.ico" class="idle favicon"><link rel="" type="image/x-icon" href="/static/favicons/favicon-busy-1.ico" class="busy favicon"><script defer="defer" src="/static/lab/main.c047a5cb14c1d595046d.js?v=c047a5cb14c1d595046d"></script></head><body><script>/* Remove token from URL. */
+  (function () {
+    var location = window.location;
+    var search = location.search;
+
+    // If there is no query string, bail.
+    if (search.length <= 1) {
+      return;
+    }
+
+    // Rebuild the query string without the `token`.
+    var query = '?' + search.slice(1).split('&')
+      .filter(function (param) { return param.split('=')[0] !== 'token'; })
+      .join('&');
+
+    // Rebuild the URL with the new query string.
+    var url = location.origin + location.pathname +
+      (query !== '?' ? query : '') + location.hash;
+
+    if (url === location.href) {
+      return;
+    }
+
+    window.history.replaceState({ }, '', url);
+  })();</script></body></html>
